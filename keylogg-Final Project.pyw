@@ -81,7 +81,7 @@ def uploadToSFTP():
 	print("Connecting to ssh server")
 	cnopts = pysftp.CnOpts()
 	cnopts.hostkeys = None   
-	sftp = pysftp.Connection(host= '209.97.140.0',username='cba-vsftpd',password='BananaReconLinux$!$!', cnopts=cnopts) #server credentials
+	sftp = pysftp.Connection(host= '',username='',password='', cnopts=cnopts) #server credentials
 	with sftp.cd("notftp"):
 		sftp.put('toupload/video.avi',preserve_mtime=True)
 		sftp.put('toupload/screenshot.png',preserve_mtime=True)
